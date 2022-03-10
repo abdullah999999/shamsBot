@@ -1,10 +1,9 @@
 import os
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
-from telegram.ext import Updater
 
 
-token = '5202377147:AAFc5vd0EaG_DlOgFca4iqXHqxuHqx1mRoI'
+token = '5245641506:AAEZIWwvcZa6AGUsZ3gp6pTC7zhyYUiXk50'
 
 bot = telebot.TeleBot(token)
 
@@ -162,5 +161,8 @@ def send_text(message):
                         رقم التواصل : 2319300\ 2313245\ 2319069\ 0940840001''')
 
 
+bot.remove_webhook()
 
-bot.polling()
+if __name__ == '__main__':
+    bot.polling(none_stop=True)
+
