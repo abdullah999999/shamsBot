@@ -5,7 +5,7 @@ from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
 load_dotenv()
 
-Token = os.getenv('API_KEY')
+Token = os.environ.get('API_KEY')
 api_token = Token
 
 bot = telebot.TeleBot(api_token)
