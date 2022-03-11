@@ -3,7 +3,7 @@ import telebot
 from dotenv import load_dotenv
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
-load_dotenv()
+load_dotenv('C:\\Users\\SONY\\Desktop\\Abdullah\\.env')
 
 Token = os.environ.get('API_KEY')
 api_token = Token
