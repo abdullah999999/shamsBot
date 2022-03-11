@@ -8,8 +8,6 @@ load_dotenv()
 Token = os.getenv('API_KEY')
 api_token = Token
 
-
-
 bot = telebot.TeleBot(api_token)
 
 @bot.message_handler(commands=['start'])
